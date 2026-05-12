@@ -18,3 +18,10 @@ cards.forEach(card => {
   card.style.transform = "translateY(50px)";
   card.style.transition = "0.6s ease";
 });
+
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
