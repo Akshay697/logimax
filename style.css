@@ -21,6 +21,12 @@ body {
   z-index: 1000;
 }
 
+/* LOGO */
+.logo img {
+  height: 100px;
+}
+
+
 .container {
   display: flex;
   justify-content: space-between;
