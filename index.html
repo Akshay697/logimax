@@ -64,7 +64,17 @@
       <!-- NAV LINKS -->
       <nav id="nav-menu" class="nav-menu">
         <a href="#">Home</a>
-        <a href="#services">Services</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false">Services</button>
+          <div class="nav-dropdown-menu">
+            <a href="ocean-freight.html">Ocean Freight</a>
+            <a href="air-freight.html">Air Freight</a>
+            <a href="road-transport.html">Road Transport</a>
+            <a href="warehousing.html">Warehousing</a>
+            <a href="cold-chain.html">Cold Chain</a>
+            <a href="customs-clearance.html">Customs Clearance</a>
+          </div>
+        </div>
         <a href="#about-us">About Us</a>
         <a href="#why-choose-us">Why LogiMex</a>
         <a href="#contact-us">Contact Us</a>
@@ -103,41 +113,71 @@
       <!-- SERVICES GRID -->
       <div class="services-grid" >
 
-        <div class="service-card" data-aos="zoom-in">
-          <div class="icon">🚢</div>
-          <h3>Ocean Freight</h3>
-          <p>Cost-effective international shipping solutions for bulk cargo.</p>
-        </div>
+        <a class="service-card" href="ocean-freight.html" data-aos="zoom-in">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1200&q=80" alt="Ocean freight containers at port">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">International</span>
+            <h3>Ocean Freight</h3>
+            <p>Cost-effective international shipping solutions for bulk cargo.</p>
+          </div>
+        </a>
 
-       <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon">✈️</div>
-          <h3>Air Freight</h3>
-          <p>Fast and reliable delivery for time-sensitive shipments.</p>
-        </div>
+       <a class="service-card" href="air-freight.html" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=1200&q=80" alt="Air freight shipment handling">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">Fast Transit</span>
+            <h3>Air Freight</h3>
+            <p>Fast and reliable delivery for time-sensitive shipments.</p>
+          </div>
+        </a>
 
-       <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon">🚛</div>
-          <h3>Road Transport</h3>
-          <p>Flexible domestic transportation with a strong network.</p>
-        </div>
+       <a class="service-card" href="road-transport.html" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?auto=format&fit=crop&w=1200&q=80" alt="Road transport and trucking">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">Regional</span>
+            <h3>Road Transport</h3>
+            <p>Flexible domestic transportation with a strong network.</p>
+          </div>
+        </a>
 
-       <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon">📦</div>
-          <h3>Warehousing</h3>
-          <p>Secure storage and efficient inventory management solutions.</p>
-        </div>
+       <a class="service-card" href="warehousing.html" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80" alt="Warehousing and distribution storage">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">Storage</span>
+            <h3>Warehousing</h3>
+            <p>Secure storage and efficient inventory management solutions.</p>
+          </div>
+        </a>
 
-       <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon">❄️</div>
-          <h3>Cold Chain</h3>
-          <p>Temperature-controlled logistics for sensitive goods.</p>
-        </div>
+       <a class="service-card" href="cold-chain.html" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=80" alt="Temperature controlled logistics and cold chain">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">Controlled</span>
+            <h3>Cold Chain</h3>
+            <p>Temperature-controlled logistics for sensitive goods.</p>
+          </div>
+        </a>
 
-       <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon">📄</div>
-          <h3>Customs Clearance</h3>
-          <p>Hassle-free documentation and customs processing.</p>
-        </div>
+       <a class="service-card" href="customs-clearance.html" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80" alt="Customs clearance paperwork and compliance">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-badge">Compliance</span>
+            <h3>Customs Clearance</h3>
+            <p>Hassle-free documentation and customs processing.</p>
+          </div>
+        </a>
 
       </div>
 
