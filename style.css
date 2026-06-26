@@ -44,9 +44,7 @@ section {
 }
 
 section:nth-of-type(even) {
-  background:
-    linear-gradient(135deg, rgba(0, 207, 200, 0.12), rgba(255, 255, 255, 0.86)),
-    var(--aqua-soft);
+      background: linear-gradient(135deg, rgba(0, 207, 200, 0.12), rgba(255, 255, 255, 0.86)), #d0dbda;
 }
 
 .container {
@@ -512,19 +510,25 @@ section:nth-of-type(even) {
 .service-highlights div,
 .service-list-grid span {
   background: linear-gradient(180deg, var(--white), var(--aqua-panel));
- 
-  border-radius: 14px;
   box-shadow: 0 8px 20px rgba(8, 126, 139, 0.08);
 }
 
-.service-highlights div {
-  position: relative;
+.service-highlights>div {
+  background: #fff;
+  border-radius: 16px;
+  height: 480px;
   overflow: hidden;
-  aspect-ratio: 600 / 640;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-highlights div {
   min-height: 0;
-  cursor: default;
-  background: var(--white);
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  aspect-ratio: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-highlights div.active {
@@ -552,10 +556,8 @@ section:nth-of-type(even) {
 
 .feature-media {
   width: 100%;
-  position: absolute;
+  height: 60%;
   inset: 0;
-  height: 100%;
-  min-height: 0;
   display: block;
   object-fit: cover;
   background: var(--aqua-soft);
@@ -569,12 +571,11 @@ section:nth-of-type(even) {
 }
 
 .feature-copy {
-  position: absolute;
+  flex: 1;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
-  padding: 24px 26px 28px;
+  padding: 35px 26px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
