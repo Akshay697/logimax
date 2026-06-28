@@ -17,37 +17,44 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-      duration: 800,        // faster on mobile
-      once: false,
-      offset: 80,           // smaller trigger distance
-      disable: window.innerWidth < 480 ? true : false
-    });
-  });
-  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Logimex Global",
+    "url": "https://logimexglobal.in"
+  }
 </script>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const target = document.querySelector(this.getAttribute("href"));
-
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth"
-        });
-
-        setTimeout(() => {
-          AOS.refresh();
-        }, 300);
-      }
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 800,        // faster on mobile
+        once: false,
+        offset: 80,           // smaller trigger distance
+        disable: window.innerWidth < 480 ? true : false
+      });
     });
-  });
-</script>
+
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth"
+          });
+
+          setTimeout(() => {
+            AOS.refresh();
+          }, 300);
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -58,7 +65,7 @@
 
       <!-- LOGO -->
       <div class="logo">
-          <img src="assets/logo_monochrome.png" alt="LogiMex Logo">
+        <img src="assets/logo_monochrome.png" alt="LogiMex Logo">
       </div>
 
       <!-- NAV LINKS -->
@@ -111,7 +118,7 @@
       </div>
 
       <!-- SERVICES GRID -->
-      <div class="services-grid" >
+      <div class="services-grid">
 
         <a class="service-card" href="ocean-freight.html" data-aos="zoom-in">
           <div class="service-card-media">
@@ -124,7 +131,7 @@
           </div>
         </a>
 
-       <a class="service-card" href="air-freight.html" data-aos="zoom-in" data-aos-delay="100">
+        <a class="service-card" href="air-freight.html" data-aos="zoom-in" data-aos-delay="100">
           <div class="service-card-media">
             <img src="assets/air_freight_track_n_trace.avif" alt="Air freight shipment handling">
           </div>
@@ -135,7 +142,7 @@
           </div>
         </a>
 
-       <a class="service-card" href="road-transport.html" data-aos="zoom-in" data-aos-delay="100">
+        <a class="service-card" href="road-transport.html" data-aos="zoom-in" data-aos-delay="100">
           <div class="service-card-media">
             <img src="assets/road_transport_expedited.avif" alt="Road transport and trucking">
           </div>
@@ -146,7 +153,7 @@
           </div>
         </a>
 
-       <a class="service-card" href="warehousing.html" data-aos="zoom-in" data-aos-delay="100">
+        <a class="service-card" href="warehousing.html" data-aos="zoom-in" data-aos-delay="100">
           <div class="service-card-media">
             <img src="assets/warehousing_grow.avif" alt="Warehousing and distribution storage">
           </div>
@@ -157,7 +164,7 @@
           </div>
         </a>
 
-       <a class="service-card" href="cold-chain.html" data-aos="zoom-in" data-aos-delay="100">
+        <a class="service-card" href="cold-chain.html" data-aos="zoom-in" data-aos-delay="100">
           <div class="service-card-media">
             <img src="assets/cold_chain_optimal_solution.avif" alt="Temperature controlled logistics and cold chain">
           </div>
@@ -168,7 +175,7 @@
           </div>
         </a>
 
-       <a class="service-card" href="customs-clearance.html" data-aos="zoom-in" data-aos-delay="100">
+        <a class="service-card" href="customs-clearance.html" data-aos="zoom-in" data-aos-delay="100">
           <div class="service-card-media">
             <img src="assets/service_hero_customs.jpeg" alt="Customs clearance paperwork and compliance">
           </div>
@@ -189,7 +196,7 @@
     <div class="about-container">
 
       <!-- LEFT CONTENT -->
-     <div class="about-text" data-aos="fade-right">
+      <div class="about-text" data-aos="fade-right">
         <h2>About Us</h2>
         <p>
           We are a trusted logistics company committed to delivering reliable, efficient,
@@ -213,7 +220,7 @@
       </div>
 
       <!-- RIGHT IMAGE -->
-     <div class="about-image" data-aos="fade-left">
+      <div class="about-image" data-aos="fade-left">
         <img src="assets/warehousing_quick_shipment.avif" alt="Logistics">
       </div>
 
@@ -227,12 +234,12 @@
     <div class="why-container">
 
       <!-- LEFT IMAGE -->
-    <div class="why-image" data-aos="fade-right">
+      <div class="why-image" data-aos="fade-right">
         <img src="assets/road_transport_our_priority.avif" alt="Logistics">
       </div>
 
       <!-- RIGHT CONTENT -->
-     <div class="why-text" data-aos="fade-left">
+      <div class="why-text" data-aos="fade-left">
         <h2>Why Choose Us</h2>
         <p>
           We provide reliable and efficient logistics solutions tailored to your business needs.
@@ -243,7 +250,7 @@
         <!-- FEATURES GRID -->
         <div class="why-features">
 
-        <div class="why-card" data-aos="fade-up">
+          <div class="why-card" data-aos="fade-up">
             <h3>On-Time Delivery</h3>
             <p>We ensure your shipments reach their destination without delays.</p>
           </div>
